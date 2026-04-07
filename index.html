@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ歌单合集</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans SC', -apple-system, sans-serif;
+    background: #0a0a0f;
+    color: #e0e0e8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff006e, #00f5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .subtitle {
+    color: #666680;
+    font-size: 14px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 420px;
+  }
+  .card {
+    background: linear-gradient(145deg, rgba(18,18,26,0.95), rgba(10,10,15,0.98));
+    border: 1.5px solid rgba(255,0,110,0.4);
+    border-radius: 14px;
+    padding: 22px 28px;
+    text-decoration: none;
+    color: #e0e0e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255,0,110,0.1);
+  }
+  .card:hover {
+    border-color: #ff006e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255,0,110,0.25);
+  }
+  .card-left { display: flex; flex-direction: column; gap: 4px; }
+  .card-name { font-size: 18px; font-weight: 700; color: #fff; }
+  .card-count { font-size: 13px; color: #666680; }
+  .card-arrow { font-size: 24px; color: #ff006e; }
+</style>
+</head>
+<body>
+  <div class="title">🎧 DJ 歌单合集</div>
+  <div class="subtitle">点击即可打开 / 分享给好友</div>
+  <div class="card-grid">
+    <a href="01-trial-99.html" class="card">
+      <div class="card-left">
+        <div class="card-name">🎁 体验包</div>
+        <div class="card-count">99首 · 入门首选</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </a>
+    <a href="02-popular-500.html" class="card">
+      <div class="card-left">
+        <div class="card-name">🔥 畅销包</div>
+        <div class="card-count">500首 · 热门精选</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </a>
+    <a href="03-deluxe-1000.html" class="card">
+      <div class="card-left">
+        <div class="card-name">💎 豪华包</div>
+        <div class="card-count">1000首 · 深度收藏</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </a>
+    <a href="04-complete-1851.html" class="card">
+      <div class="card-left">
+        <div class="card-name">👑 完整合集</div>
+        <div class="card-count">1851首 · 全套收录</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </a>
+  </div>
+</body>
+</html>
